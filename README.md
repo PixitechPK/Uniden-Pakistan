@@ -40,5 +40,11 @@ Uniden Pakistan brings **global quality with local reliability**.
 
 
 ---
+📬 Contact Information
 
-Would you like me to also generate a short **GitHub repository description + tags** (for when you publish it), so it appears nicely in search results and GitHub Explore?
+Pixitech – Official Web Partner of Uniden Pakistan
+📧 Email: zubair.a@pixitech.net
+
+📞 Phone: +92 345 3799494
+
+🌐 Website: https://pixitech.net
