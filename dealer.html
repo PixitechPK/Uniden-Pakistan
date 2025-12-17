@@ -11,7 +11,57 @@
         body { margin:0; font-family: 'Inter', sans-serif; background:#f7f7f7; color:#333; line-height:1.6; }
         a { text-decoration:none; color:inherit; }
         .container { max-width:1200px; margin:0 auto; padding:20px; }
-        .header { margin-bottom:40px; }
+        .header { margin-bottom:40px; }<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uniden Telephone Wholesale & Bulk Supply in Pakistan</title>
+  <meta name="description" content="We provide genuine Uniden telephones in bulk and wholesale across Pakistan for offices, resellers, and corporate buyers.">
+  <meta name="keywords" content="Uniden dealer in Pakistan, Uniden telephone wholesale Pakistan, buy Uniden phones in bulk, Uniden office telephone supplier">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Page Components -->
+<div include-html="components/header.html"></div>
+<div include-html="components/hero.html"></div>
+<div include-html="components/about.html"></div>
+<div include-html="components/products.html"></div>
+<div include-html="components/online-orders.html"></div>
+<div include-html="components/contact.html"></div>
+<div include-html="components/footer.html"></div>
+
+<script>
+  function includeHTML() {
+    const elements = document.querySelectorAll('[include-html]');
+    elements.forEach(el => {
+      const file = el.getAttribute('include-html');
+      if (file) {
+        fetch(file)
+          .then(response => {
+            if (response.ok) return response.text();
+            throw new Error('Page not found');
+          })
+          .then(data => {
+            el.innerHTML = data;
+            el.removeAttribute('include-html');
+            includeHTML(); // recursive for nested includes
+          })
+          .catch(err => {
+            el.innerHTML = "Page not found.";
+            console.error(err);
+          });
+      }
+    });
+  }
+  document.addEventListener("DOMContentLoaded", includeHTML);
+</script>
+
+</body>
+</html>
+
         /* HERO */
         .hero { display:flex; flex-wrap:wrap; align-items:center; background:#e6f0fa; padding:60px 20px; border-radius:10px; margin-bottom:50px; }
         .hero-text { flex:1; min-width:300px; padding:20px; }
