@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P488RD8N2P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P488RD8N2P');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Uniden Wholesale Distributor in Karachi | Uniden Distributor in Pakistan</title>
+  <meta name="description" content="Buy genuine Uniden telephones in wholesale. Authorized Uniden distributor in Karachi, Pakistan for bulk supplies, reseller pricing, and nationwide delivery.">
+  <meta name="keywords" content="uniden wholesale, uniden distributor in Karachi, uniden distributor in Pakistan, uniden bulk supplies, uniden telephone in wholesale">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="font-sans text-gray-800 bg-white">
+
+  <!-- Page Components (Same Structure as Index) -->
+  <div include-html="components/header.html"></div>
+
+  <!-- Page-Specific Components -->
+  <div include-html="Components/Pages/uniden_wholesale_karachi/hero.html"></div>
+  <div include-html="Components/Pages/uniden_wholesale_karachi/about.html"></div>
+
+  <!-- Global Components -->
+  <div include-html="components/products.html"></div>
+
+  <!-- Page-Specific (Optional: if you want a wholesale CTA like online-orders) -->
+  <div include-html="Components/Pages/uniden_wholesale_karachi/online-orders.html"></div>
+
+  <!-- Global Components -->
+  <div include-html="components/contact.html"></div>
+  <div include-html="components/footer.html"></div>
+
+  <!-- HTML Include Loader (Same as Index) -->
+  <script>
+    document.querySelectorAll('[include-html]').forEach(el => {
+      fetch(el.getAttribute('include-html'))
+        .then(res => res.text())
+        .then(data => el.innerHTML = data)
+        .catch(err => console.error('Include failed:', err));
+    });
+  </script>
+
+</body>
+</html>
